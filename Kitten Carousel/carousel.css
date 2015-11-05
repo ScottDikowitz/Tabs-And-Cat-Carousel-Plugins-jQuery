@@ -1,4 +1,4 @@
-html, p, li, body, figure, section, ul, a {
+html, p, li, body, figure, section, ul, a{
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -52,7 +52,7 @@ ul.items {
   border: 10px solid black;
   margin: auto;
   overflow: hidden;
-
+  background: black;
 }
 
 .slide-left {
@@ -62,6 +62,10 @@ ul.items {
 button {
   position: absolute;
   bottom: 0px;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  color: inherit;
 }
 
 li.active {
