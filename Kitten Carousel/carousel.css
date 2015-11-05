@@ -1,0 +1,86 @@
+html, p, li, body, figure, section, ul, a {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  text-decoration: inherit;
+  font-family: sans-serif;
+  background: transparent;
+  text-align: inherit;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  /*border: 5px solid red;*/
+  /*overflow: hidden;*/
+}
+
+body {
+  background: lightgray;
+}
+
+.group:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul.items {
+  /*overflow: hidden;*/
+
+}
+
+.items li {
+  display: none;
+  float: left;
+  /*width: 200px;*/
+  width: 100%;
+  /*background: orange;*/
+}
+
+.carousel {
+  position: relative;
+  width: 200px;
+  height:200px;
+  border: 10px solid black;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.slide-left {
+  right: 0px;
+}
+
+button {
+  position: absolute;
+  bottom: 0px;
+}
+
+li.active {
+  display: block;
+  /*margin-left: -1px;*/
+}
+
+li.active.right {
+  position: absolute;
+  left: 100%;
+}
+
+li.active.left {
+  position: absolute;
+  left: -100%;
+}
+
+.active {
+  position: absolute;
+  left: 0%;
+  transition: left .5s linear;
+}

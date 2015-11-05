@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./../jquery-2.1.1.js"></script>
+    <script src="./carousel.js"></script>
+    <link href="./carousel.css" rel="stylesheet" type="text/css" />
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <figure class="carousel">
+      <ul class="items group">
+        <li><img src="images/180.jpg"></li>
+        <li><img src="images/182.jpg"></li>
+        <li><img src="images/286.jpg"></li>
+        <li><img src="images/287.jpg"></li>
+      </ul>
+
+      <button class="slide-right">Prev</button>
+      <button class="slide-left">Next</button>
+
+
+    </figure>
+
+
+
+  <script>
+    $(function() {
+      $('.carousel').carousel();
+    })
+</script>
+  </body>
+</html>

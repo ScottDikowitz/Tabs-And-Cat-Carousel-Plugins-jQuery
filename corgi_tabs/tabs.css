@@ -28,11 +28,10 @@ ul {
 
 .content-tabs article {
   display: none;
+  transition: opacity .5s linear;
 }
 
 article.transitioning {
   display: block;
   opacity: 0;
-  transition: opacity .5s linear;
-
 }
