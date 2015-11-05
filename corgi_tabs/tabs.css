@@ -1,0 +1,38 @@
+html, p, li, body, article, section, ul, a {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  text-decoration: inherit;
+  font-family: sans-serif;
+  background: transparent;
+  text-align: inherit;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.content-tabs .active {
+  font-weight: bold;
+  display: block;
+
+}
+
+.content-tabs article {
+  display: none;
+}
+
+article.transitioning {
+  display: block;
+  opacity: 0;
+  transition: opacity .5s linear;
+
+}

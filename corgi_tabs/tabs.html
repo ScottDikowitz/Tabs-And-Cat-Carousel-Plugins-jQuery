@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./jquery-2.1.1.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <ul class="tabs" data-content-tabs=".content-tabs">
+      <li><a class="active" href='#arctic-dog'>Arctic Dog</a></li>
+      <li><a href='#boxer'>Boxer</a></li>
+      <li><a href='#border-collie'>Border Collie</a></li>
+    </ul>
+
+    <section class="content-tabs">
+      <article class="active" id="arctic-dog">
+        <p> This arctic sled dog was bred for strength and endurance.
+        </p>
+      </article>
+
+      <article id="boxer">
+        <p> The Boxer is alert, curious, playful, loyal and dignified.
+        </p>
+      </article>
+      <article id="border-collie">
+        <p> Border Collies, known as the workaholics of the dog world, are a lot of work.
+        </p>
+      </article>
+    </section>
+
+
+
+
+
+  <script>
+    $(function() {
+      $('.tabs').tabs();
+    })
+</script>
+  </body>
+</html>
